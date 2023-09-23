@@ -21,9 +21,9 @@ function updateClock() {
   hourEl.innerText = h;
   minuteEl.innerText = m;
   secondEl.innerText = s;
-  setTimeout(() => {
-    updateClock();
-  }, 1000);
   apmpEl.innerText = ampm;
 }
-updateClock();
+// Here we call the function
+setInterval(() => {
+  updateClock();
+}, 1000);
